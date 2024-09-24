@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bai3_b6.css">
+    <title>Menu Overlay</title>
+  </head>
+</html>
+<body>
+
+    <div class="background-text">
+        Clear thinking at the wrong moment can stifle creativity
+    </div>
+
+    <button class="open-menu-btn" id="openMenuBtn">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="close-btn" id="closeBtn">&times;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Buy Now!</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('openMenuBtn').onclick = function() {
+            document.getElementById('menuOverlay').style.display = 'flex';
+        }
+
+        document.getElementById('closeBtn').onclick = function() {
+            document.getElementById('menuOverlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
